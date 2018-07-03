@@ -41,7 +41,7 @@ $(function() {
 		 * in the allFeeds object and ensures it has a name defined
 		 * and that the name is not empty.
 		 */
-		it('ensures URl is defined and it is not empty', function() {
+		it('ensures name is defined and it is not empty', function() {
 				allFeeds.forEach((feed) => {
 					expect(feed.name).toBeDefined();
 					expect(feed.name.length).not.toBe(0);
@@ -101,6 +101,7 @@ $(function() {
 					expect(feedEntries.length).toBeGreaterThan(0);
 			done();
 		});		
+
 	});
 
 	/* TODO: Write a new test suite named "New Feed Selection" */
